@@ -117,11 +117,12 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("%s: Please specify a filename.\n", PROGRAM_NAME);
-		return 1;
+		return EXIT_FAILURE;
 	}
 	else if (argc > 2)
 	{
 		printf("%s: Please specify only one filename.\n", PROGRAM_NAME);
+		return EXIT_FAILURE;
 	}
 	else
 	{
@@ -129,6 +130,7 @@ int main(int argc, char *argv[])
 		if (code != 0)
 		{
 			printf("%s: File not found.\n", PROGRAM_NAME);
+			return EXIT_FAILURE;
 		}
 	}
 
