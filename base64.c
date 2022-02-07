@@ -69,7 +69,7 @@ void convert_and_print(int byte1, int byte2, int byte3)
 }
 
 /**
- * @brief Reads 3 bytes from the given filename and forwards them to the base 64 conversion.
+ * @brief Reads three bytes from the given filename and forwards them to the base 64 conversion.
  *
  * @param file_name filename of the file to read
  * @return int 0 if the file was found, 1 if the file was not found
@@ -104,7 +104,7 @@ int read_file(char *file_name)
 }
 
 /**
- * @brief Handles the given command line argument and initializes the base 64 conversion.
+ * @brief Checks the given command line arguments and initializes the base 64 conversion.
  *
  * @param argc number of command line arguments
  * @param argv list of command line arguments
