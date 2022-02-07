@@ -30,7 +30,6 @@ void convert_and_print(int byte1, int byte2, int byte3)
 	if (byte2 == EOF)
 	{
 		new_byte2 = (byte1 << 4) & 63;
-		new_char3 = '=';
 		new_byte3 = 0;
 		new_byte4 = 0;
 	}
