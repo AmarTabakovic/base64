@@ -9,7 +9,7 @@ char *base64_table = BASE64_TABLE;
 /**
  * @brief Converts and prints three given bytes to four groups of six bits.
  *
- * TODO: Optimize end conditions in order to set the new_chars only once instead of twice (0 and '=').
+ * TODO: Optimize end conditions in order to set the new_chars only once instead of twice (0 and '=')
  *
  * @param byte1 first byte
  * @param byte2 second byte
@@ -126,7 +126,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		code = read_file(argv[1]);
+		code = read_file(*(argv + 1));
 		if (code != 0)
 		{
 			printf("%s: File not found.\n", PROGRAM_NAME);
